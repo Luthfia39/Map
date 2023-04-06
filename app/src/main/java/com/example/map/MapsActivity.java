@@ -72,15 +72,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         );
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(vokasiUGM, 20));
 
-//        LatLng masjid = new LatLng(-7.536834916243139, 110.65107688323646);
-//        mMap.addMarker(new MarkerOptions()
-//                .position(masjid)
-//                .title("Marker di masjid")
-//        );
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(masjid, 20));
-
         setMapOnClick(mMap);
         setPoiClicked(mMap);
+        enableMyLocation();
     }
 
 //    menampilkan menu
